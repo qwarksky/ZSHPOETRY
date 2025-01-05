@@ -18,4 +18,7 @@ Les commandes DOCKER basique
 * Monitoring dockers : docker stats
 * Stopper un docker : docker stop zshpoetry
 
-## Exploitation
+## Exploitation depuis le terminal
+1. $> git clone https://github.com/qwarksky/ZSHPOETRY.git ZSHPOETRY
+2. $> docker build -t zshpoetry .
+3. $> docker run -it zshpoetry /bin/zsh 
