@@ -34,7 +34,7 @@ ENV PATH="$PYENV_ROOT/shims:$PYENV_ROOT/bin:$HOME/.local/bin:pyenv:$PATH"
 WORKDIR $HOME
 RUN mkdir PROJECTS
 RUN mkdir PROJECTS/pyproject
-COPY poetry.lock pyproject.toml PROJECTS/pyproject
+COPY pyproject.toml PROJECTS/pyproject
 
 WORKDIR $HOME/PROJECTS/pyproject
 RUN pyenv install 3.13
