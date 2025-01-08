@@ -31,4 +31,4 @@ Les commandes DOCKER basique
 2. Lister les docker : docker volume ls
 3. Inspecter le volume pour déterminer le chemin sur le système hôte : docker volume inspect data
 
-Cela permet de transférer les fichier entre le docker et le système. 
+Cela permet de transférer les fichiers entre le docker et le système hôte. 
