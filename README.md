@@ -1,5 +1,8 @@
 # ZSHPOETRY
 
+* Taille de l'image : 2.16 GB
+* Testé depuis un système hôte Debian
+
 ## Pourquoi ?
 * Polyvalence entre les systèmes
 * Réduire la taille de l'environnement sans passer par une machine virtuelle
@@ -21,4 +24,11 @@ Les commandes DOCKER basique
 ## Exploitation depuis le terminal
 1. $> git clone https://github.com/qwarksky/ZSHPOETRY.git ZSHPOETRY
 2. $> docker build -t zshpoetry .
-3. $> docker run -it zshpoetry /bin/zsh 
+3. $> docker run -it zshpoetry /bin/zsh
+
+## Monter le docker avec le VOLUME 
+1. Montage avec le volume : docker run --mount type=volume,src=data,dst=/root/PROJECTS -it zshpoetry /bin/zsh
+2. Lister les docker : docker volume ls
+3. Inspecter le volume pour déterminer le chemin sur le système hôte : docker volume inspect data
+
+Cela permet de transférer les fichier entre le docker et le système. 
