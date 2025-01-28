@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "/media/nvme/PROJECTS/prjupyter"
+		}
+	],
+	"settings": {
+		"jupyter.interactiveWindow.textEditor.executeSelection": true,
+		"[python]": {
+			"editor.defaultFormatter": "ms-python.black-formatter"
+		},
+		"python.venvPath": "/media/nvme/.cache/pypoetry/virtualenvs/env-jupyter-kFvHh1M7-py3.13/bin"
+	}
+}
